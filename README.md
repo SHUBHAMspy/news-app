@@ -15,7 +15,7 @@ Link: https://youtu.be/eycMj_Af9To
 - clone this repo using: `git clone` https://github.com/SHUBHAMspy/news-app.git.
 
 - DO `npm install` in root directory of project on terminal to download all packages.
-- Then write `npm run dev` to start the development server.
+- Then write `npm start` to start the development server.
 
 ## Configuration
 - Grab you api key from : https://newsapi.org. 
