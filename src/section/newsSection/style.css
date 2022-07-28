@@ -1,0 +1,30 @@
+/* .newsSection{
+  position: relative;
+  top: 5.4rem;
+}
+
+.newsSection .container{
+  display: grid;
+  grid-template-columns: 18vh auto 20vw;
+  column-gap: 2rem;
+  position: relative;
+}
+
+.newsSection .container .left{
+  height: max-content;
+  position: sticky;
+  top: 5.4rem;
+} */
+
+@media (min-width: 1024px) {
+  .news-container .container {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+  }
+
+  .news-box { min-width: calc(75% - 15px); }
+}
