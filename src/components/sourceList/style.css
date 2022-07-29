@@ -36,7 +36,7 @@
   font-weight: var(--weight-500);
 }
 
-.menu-title .active {
+.active {
   color: var(--purple);
   background-color: var(--cultured);
 }

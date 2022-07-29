@@ -8,18 +8,22 @@ const Sidebar = ({openSidebar,closeSidebar,sidebarVisible}) => {
   const { sources,favourites ,addSources,addHeadlines } = useContext(GlobalContext);
 
   const [open, setOpen] = useState(openSidebar);
-  const sidebar = useRef(null);
+  const sidebarOriginal = useRef(null);
   // const dispatch = useDispatch();
 
   useEffect(() => {
     setOpen(openSidebar);
 
     open && sidebarVisible 
-      ? sidebar.current.classList.add('active') 
-      : sidebar.current.classList.remove('active') 
+      ? sidebarOriginal.current.classList.add('active') 
+      : sidebarOriginal.current.classList.remove('active') 
 
   
+  
   },[openSidebar,open,sidebarVisible])
+
+  
+
 
   const handleAllSources = async() => {
     const {articles:allHeadlines} = await newsServices.getHeadlines('us');
@@ -29,11 +33,22 @@ const Sidebar = ({openSidebar,closeSidebar,sidebarVisible}) => {
 
   return (
     <>
-    <div className='sidebar-wrapper'></div>
-      <div ref={sidebar}  className='sidebar '>
+      <div ref={sidebarOriginal}  className='sidebar '>
         <div className="sidebar-category">
+          
+            
           <div className="sidebar-top">
             <button className="sidebar-title" onClick={handleAllSources}>All Sources &gt;</button>
+            <button 
+                className="sidebar-close-btn" data-mobile-menu-close-btn 
+                
+                onClick={() => {
+                  setOpen(!open)
+                  closeSidebar(!open)
+                }}
+              >
+                <ion-icon name="close-outline"></ion-icon>
+            </button>
           </div>
           <SourceList/>
         </div>

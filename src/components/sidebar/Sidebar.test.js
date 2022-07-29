@@ -8,5 +8,5 @@ test('displays source list ,All Sources & Favourites Button',async() => {
     render(<SourceList/>)
   })
 
-  expect(screen.getByRole('button', {name: 'ALL SOURCES &gt;'}))
+  expect(screen.getAllByRole('button').length).toBe(2)
 })

@@ -96,7 +96,7 @@
 
   .news-minimal .news-showcase {
     min-width: calc(50% - 10px);
-    width: calc(50% - 10px);
+    /* width: calc(50% - 10px); */
   }
 
   .news-minimal .showcase-container { min-width: 100%; }

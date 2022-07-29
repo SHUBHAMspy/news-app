@@ -12,6 +12,7 @@ const SourceList = () => {
   const [isFetching, setIsFetching] = useState(false);
   const {sources:sourcesData,addSources,addHeadlines } = useContext(GlobalContext);
   const [active, setActive] = useState(false);
+  const [activeIndex, setActiveIndex] = useState(null);
   // const dispatch = useDispatch();
   // const sourcesData = useSelector((state) => state.sources.sources);
   console.log(sourcesData);
@@ -61,11 +62,12 @@ const SourceList = () => {
     <ul role='list' className="sidebar-menu-category-list has-scrollbar">
       {
         sourcesData.map((source,index) => (
-          <li className='sidebar-menu-category' key={source.id}>
+          <li className={`sidebar-menu-category ${active && activeIndex === index ? 'active': ''}`} key={source.id}>
             
-            <p className={`menu-title ${active ? 'active': ''}`} onClick={() => {
-              getSourceHeadlines(source.name);
+            <p className='menu-title ' onClick={() => {
               setActive(true);
+              setActiveIndex(index);
+              getSourceHeadlines(source.name);
             }}>
               {source.name}
             </p>
