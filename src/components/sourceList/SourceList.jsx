@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from "react";
-import { GlobalContext } from "../../context/globalState";
+import { GlobalContext } from "../../context/GlobalState";
 import * as newsServices from "../../services/newsServices";
 
 //import { addSources } from '../../store/actions/newsActions';
@@ -25,7 +25,7 @@ const SourceList = () => {
     setIsFetching(true);
     try {
       let {sources:newsSources} = await newsServices.getSources('us');
-      console.log(newsSources);
+      // console.log(newsSources);
       addSources(newsSources);
       
       setIsFetching(false);
@@ -58,7 +58,7 @@ const SourceList = () => {
 
 
   return (
-    <ul className="sidebar-menu-category-list has-scrollbar">
+    <ul role='list' className="sidebar-menu-category-list has-scrollbar">
       {
         sourcesData.map((source,index) => (
           <li className='sidebar-menu-category' key={source.id}>

@@ -46,6 +46,11 @@
   font-size: var(--fs-7);
 }
 
+.message{
+  color:var(--purple);
+  font-size: var(--fs-2);
+}
+
 @media (min-width: 570px) {
 
   .news-card { min-width: calc(50% - 15px); }

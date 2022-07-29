@@ -1,5 +1,5 @@
 import { useContext, useEffect, useRef, useState } from 'react';
-import { GlobalContext } from '../../context/globalState';
+import { GlobalContext } from '../../context/GlobalState';
 import * as newsServices from "../../services/newsServices";
 import SourceList from '../sourceList/SourceList';
 import './style.css';

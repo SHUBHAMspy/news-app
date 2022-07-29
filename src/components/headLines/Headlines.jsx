@@ -1,5 +1,5 @@
 import { useContext, useState } from 'react';
-import { GlobalContext } from '../../context/globalState';
+import { GlobalContext } from '../../context/GlobalState';
 
 import { convertTime } from '../../utils/convertTime';
 import './style.css';

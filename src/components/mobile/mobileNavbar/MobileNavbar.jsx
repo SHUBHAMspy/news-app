@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from 'react';
-import { GlobalContext } from '../../../context/globalState';
+import { GlobalContext } from '../../../context/GlobalState';
 
-import SideBar from "../../sidebar/SideBar";
+import Sidebar from "../../sidebar/Sidebar";
 import './style.css';
 
 const MobileNavbar = ({visibility}) => {
@@ -67,7 +67,7 @@ const MobileNavbar = ({visibility}) => {
         </button>
 
       </div>
-      {openSidebar && <SideBar openSidebar={openSidebar} sidebarVisible={visibility} closeSidebar={closeSidebar}/>} 
+      {openSidebar && <Sidebar openSidebar={openSidebar} sidebarVisible={visibility} closeSidebar={closeSidebar}/>} 
     </>
   )
 }

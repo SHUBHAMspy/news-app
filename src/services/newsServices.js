@@ -1,6 +1,6 @@
 //API URL
-export const API_URL = 'https://newsapi.org/v2';
 import axios from 'axios';
+export const API_URL = 'https://newsapi.org/v2';
 
 export const API_KEY = `${process.env.REACT_APP_API_KEY}`;
 //export const API_PARAMS = `&pageSize=${PAGESIZE}`;

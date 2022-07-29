@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { GlobalContext } from '../../context/globalState';
+import { GlobalContext } from '../../context/GlobalState';
 import { convertTime } from '../../utils/convertTime';
 import './style.css';
 
@@ -45,7 +45,7 @@ const News = () => {
           </div>
         </div>
         )
-        : <div style={{ color:"var(--purple)", fontSize:"var(--fs-2)"}}> Click headlines to read the News</div>
+        : <div className='message'  > Click headlines to read the News</div>
       }
     </>
   )

@@ -1,14 +1,30 @@
+import { render, screen, waitFor } from "@testing-library/react";
+import Headlines from "./Headlines";
 
-import '@testing-library/jest-dom'
-import { render, screen } from '../utils/test-utils'
-// import { render } from "../../utils/test-utils"
-import Headlines from "./Headlines"
-describe('Headlines',() => {
+test('loads and displays news',async() => {
+  const mockNews = [
+    {
+      author: 'xyz',
+      source: {name: 'BBC NEWS'},
+      title: 'NO recession good going.',
+      publishedAt: "2022-07-28T09:23:00Z",
+      urlToImage: "https://cdn.cnn.com/cnnnext/dam/assets/220727135434-02-iraq-protest-072722-restricted-super-tease.jpg"
+    },
+    {
+      author: 'xyz',
+      source: {name: 'BBC NEWS'},
+      title: 'NO recession good going.',
+      publishedAt: "2022-07-27T09:23:00Z",
+      urlToImage: "https://cdn.cnn.com/cnnnext/dam/assets/220727135434-02-iraq-protest-072722-restricted-super-tease.jpg"
+    },
 
-  it('loads and displays news', () => { 
-    render(<Headlines/>)
-    
-    
-    expect(screen.getByText('Loading...')).toBeInTheDocument()
+  ]
+  render(<Headlines/>);
+  await waitFor(() => {
+
+    mockNews.forEach((post) =>
+      expect(screen.getByText(post.title)).toBeInTheDocument()
+    );
+    //expect(screen.getByText('Loading...')).toBeInTheDocument()
   })
 })

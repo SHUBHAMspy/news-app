@@ -1,6 +1,6 @@
 
 import { useContext } from 'react';
-import { GlobalContext } from '../../context/globalState';
+import { GlobalContext } from '../../context/GlobalState';
 import './style.css';
 
 const Navbar = () => {
