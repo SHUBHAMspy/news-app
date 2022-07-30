@@ -5,12 +5,12 @@
 Link: https://youtu.be/eycMj_Af9To
 
 Screenshot: 
-  | Laptop View                                     | Tab View                           |  Mobile View
-  | :-----------                                    | :------------:                     |  ------------:
-  | ![screenshot1](./public/images/Screenshot.jpeg) | ![Tab](./public/images/Tablet.jpeg)| ![](./public/images/Mobile.jpeg)
-  |                                                 |                                    |
+  | Laptop View                            | Tab View                           |  Mobile View                    |
+  | :-----------                           | :------------:                     |  ------------:                  |
+  | ![Laptop](./public/images/Laptop.jpeg) | ![Tab](./public/images/Tablet.jpeg)| ![](./public/images/Mobile.jpeg)|
+  |                                        |                                    |                                 |
 
-) 
+
 
 ## Description
 
