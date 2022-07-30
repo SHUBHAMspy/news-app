@@ -4,6 +4,9 @@
 
 Link: https://youtu.be/eycMj_Af9To
 
+Initial View: Click headlines to open the news section
+![Initial View](./public/images/Screenshot.jpeg)
+
 Screenshot: 
   | Laptop View                            | Tab View                           |  Mobile View                    |
   | :-----------                           | :------------:                     |  ------------:                  |
@@ -16,8 +19,8 @@ Screenshot:
 
 - This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 -  NewsWiz is an news web application for all the news readers out there.
-- It is made with vite.
 - It gets you all the headlines from different news sources around the globe.
+- Feature: Persistent favourite news i.e you can read your favourite news or headlines whenever you want.
 
 ## In order to run this
 - clone this repo using: `git clone` https://github.com/SHUBHAMspy/news-app.git.

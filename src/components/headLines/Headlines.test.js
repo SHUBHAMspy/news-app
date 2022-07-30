@@ -38,8 +38,11 @@ test('adds headline to favourite',() => {
     const element = container.querySelector('.star')
     fireEvent.click(element,favourite.push({title:'good one'}))
     expect(favourite.length).toBe(1)
+    expect(favourite[0]).toBe({title:'good one'})
   })
- 
+
   //const element = container.querySelector('.star')
   //fireEvent.click(element,favourite.push[{title:'good one'}])
 })
+
+test('')
