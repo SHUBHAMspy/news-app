@@ -4,8 +4,11 @@
 
 Link: https://youtu.be/eycMj_Af9To
 
-Screenshot: ![Screenshot](./public/images/Screenshot.jpeg)
-  ![Screenshot](./public/images/Screenshot%202.jpeg)
+Screenshot: 
+  | Laptop View                                     | Tab View                           |  Mobile View
+  | :-----------                                    | :------------:                     |  ------------:
+  | ![screenshot1](./public/images/Screenshot.jpeg) | ![Tab](./public/images/Tablet.jpeg)| ![](./public/images/Mobile.jpeg)
+  |                                                 |                                    |
 
 ) 
 
