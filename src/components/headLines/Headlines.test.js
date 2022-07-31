@@ -45,4 +45,3 @@ test('adds headline to favourite',() => {
   //fireEvent.click(element,favourite.push[{title:'good one'}])
 })
 
-test('')

@@ -7,17 +7,7 @@ import { GlobalProvider } from './context/GlobalState.jsx';
 import NewsSection from './section/newsSection/NewsSection';
 
 function App() {
-  // const sidebar = useRef()
-  // const [clicked, setClicked] = useState(false)
-
-  // useEffect(() => {
-  //   document.addEventListener("click",handleClickOutside,)
-  // }, [handleClickOutside])
   
-  // const handleClickOutside = (e) => {
-  //   if(!sidebar.current.contains(e.target)) setClicked(!clicked)
-  // }
-
   return (
     <GlobalProvider >
       <Navbar/>
